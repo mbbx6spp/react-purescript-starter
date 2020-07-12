@@ -1,0 +1,23 @@
+* React App in PureScript
+
+This is a template repository that sets up a React starter app with a basic
+PureScript component defined to get you started.
+
+** Getting Started
+
+*** Nix
+
+Using Nix for your package manager merely requires you to run:
+
+#+BEGIN_SRC text
+$ nix-shell -p nodejs yarn spago purescript
+#+END_SRC
+
+In side that Nix shell:
+
+#+BEGIN_SRC text
+$ yarn install
+#+END_SRC
+
+You will be able to run all necessary commands for the various
+activities during the course.
