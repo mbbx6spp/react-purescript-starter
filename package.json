@@ -1,0 +1,31 @@
+{
+  "name": "purescript-react-starter",
+  "version": "1.0.0",
+  "description": "Template project for React projects written in PureScript",
+  "main": "index.js",
+  "scripts": {
+    "build": "spago build",
+    "test": "spago -x test.dhall test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mbbx6spp/react-purescript-starter.git"
+  },
+  "keywords": [
+    "purescript",
+    "react"
+  ],
+  "author": "Susan Potter <me+oss@susanpotter.net> (https://susanpotter.net/)",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/mbbx6spp/react-purescript-starter/issues"
+  },
+  "homepage": "https://github.com/mbbx6spp/react-purescript-starter#readme",
+  "dependencies": {
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "react-scripts": "3.4.1"
+  }
+}
