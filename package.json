@@ -2,10 +2,14 @@
   "name": "purescript-react-starter",
   "version": "1.0.0",
   "description": "Template project for React projects written in PureScript",
-  "main": "index.js",
+  "main": "src/index.js",
+  "private": true,
   "scripts": {
-    "build": "spago build",
-    "test": "spago -x test.dhall test"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prepare": "spago build"
   },
   "repository": {
     "type": "git",
@@ -22,10 +26,29 @@
   },
   "homepage": "https://github.com/mbbx6spp/react-purescript-starter#readme",
   "dependencies": {
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "create-react-app": "3.4.1",
     "react-scripts": "3.4.1"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+      "production": [
+          ">0.2%",
+          "not dead",
+          "not op_mini all"
+      ],
+      "development": [
+          "last 1 chrome version",
+          "last 1 firefox version",
+          "last 1 safari version"
+      ]
   }
 }
