@@ -3,6 +3,14 @@
 This is a template repository that sets up a React starter app with a basic
 PureScript component defined to get you started.
 
+** Prepare for class
+
+Generate your own project here:
+https://github.com/mbbx6spp/react-purescript-starter/generate
+
+Then follow 'System Dependencies > Nix' and 'System Dependencies >
+Yarn + direnv + devshell' sections below.
+
 ** System Dependencies
 
 *** Nix
@@ -87,9 +95,3 @@ $ yarn versions
 - To run PureScript tests run =yarn ps:test=.
 - To run JavaScript tests run =yarn test=.
 - To open a PureScript REPL run =spago repl=.
-
-
-** Prepare for class
-
-Generate your own project here:
-https://github.com/mbbx6spp/react-purescript-starter/generate
