@@ -7,11 +7,16 @@ PureScript component defined to get you started.
 
 *** Nix
 
+Assumes you have Nix version 2.3 or installed.
+
 Using Nix for your package manager merely requires you to run:
 
 #+BEGIN_SRC text
-$ nix-shell -p nodejs yarn spago purescript
+./devshell
 #+END_SRC
+
+This enters you into the shell that contains all the dependencies you
+need with the lowest amount of fuss.
 
 In side that Nix shell:
 
@@ -21,3 +26,34 @@ $ yarn install
 
 You will be able to run all necessary commands for the various
 activities during the course.
+
+** Versions
+
+If you are installing necessary dependencies via a method other than
+Nix, please make sure your versions match the following or are above
+without breaking changes in between.
+
+PureScript (=purs=):
+#+BEGIN_SRC text
+$ purs --version
+0.13.6
+#+END_SRC
+
+Spago (=spago=):
+#+BEGIN_SRC text
+$ spago version
+0.13.1
+#+END_SRC
+
+NodeJS (=node=):
+#+BEGIN_SRC text
+$ node --version
+v12.15.0
+#+END_SRC
+
+Yarn (=yarn=):
+#+BEGIN_SRC text
+$ yarn versions
+1.22.0
+#+END_SRC
+
