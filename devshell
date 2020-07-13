@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-nix-shell -I channel:nixpkgs-20.03-darwin \
-          -p spago purescript yarn nodejs-12_x
