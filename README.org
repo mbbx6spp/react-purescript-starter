@@ -88,3 +88,8 @@ $ yarn versions
 - To run JavaScript tests run =yarn test=.
 - To open a PureScript REPL run =spago repl=.
 
+
+** Prepare for class
+
+Generate your own project here:
+https://github.com/mbbx6spp/react-purescript-starter/generate
