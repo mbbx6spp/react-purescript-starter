@@ -3,7 +3,7 @@
 This is a template repository that sets up a React starter app with a basic
 PureScript component defined to get you started.
 
-** Getting Started
+** System Dependencies
 
 *** Nix
 
@@ -18,16 +18,37 @@ Using Nix for your package manager merely requires you to run:
 This enters you into the shell that contains all the dependencies you
 need with the lowest amount of fuss.
 
+From now on it is assumed you will run all commands in the =devshell=.
+
+We will look at hooking this into your =.envrc= for =direnv= to
+automatically handle in the class.
+
+*** Application dependencies and configuration
+
 In side that Nix shell:
 
 #+BEGIN_SRC text
 $ yarn install
 #+END_SRC
 
+Copy the =.env.sample= file to =.env= and change any environment
+variables necessary for you local development environment.
+
+#+BEGIN_SRC text
+$ cp .env.sample .env
+#+END_SRC
+
+To ensure all changes to your =.env= file gets source into your shell
+you will want to run:
+
+#+BEGIN_SRC text
+$ direnv allow
+#+END_SRC
+
 You will be able to run all necessary commands for the various
 activities during the course.
 
-** Versions
+*** Versions
 
 If you are installing necessary dependencies via a method other than
 Nix, please make sure your versions match the following or are above
@@ -56,4 +77,14 @@ Yarn (=yarn=):
 $ yarn versions
 1.22.0
 #+END_SRC
+
+
+** Developer Porcelain
+
+- To start the React app run =yarn start=. This will show you the
+  local and network URLs to use to access your development server
+  running your React application.
+- To run PureScript tests run =yarn ps:test=.
+- To run JavaScript tests run =yarn test=.
+- To open a PureScript REPL run =spago repl=.
 

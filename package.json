@@ -9,7 +9,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "spago build"
+    "prepare": "spago build",
+    "ps:test": "spago -x test.dhall test"
   },
   "repository": {
     "type": "git",
