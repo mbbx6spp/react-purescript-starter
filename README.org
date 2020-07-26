@@ -40,6 +40,14 @@ $ nix-shell
 Either of the above enter you into the shell that contains all the
 system and tool dependencies you need with the lowest amount of fuss.
 
+*** Symlink to PureScript output
+
+#+BEGIN_SRC text
+$ ln -sf $PWD/output $PWD/src/output
+#+END_SRC
+
+This is needed due to React limitations (all source must appear under =src/=).
+
 *** Yarn
 
 In side that Nix shell:
